@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title"></title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <main role="main">
+        <section id="home" class="section hero">
+            <div class="hero-background bg1"></div>
+            <div class="hero-background bg2"></div>
+            <div class="hero-content">
+                <h1 id="community-name"></h1>
+                <p id="hero-tagline"></p>
+                
+                <div class="cta-buttons">
+                    <a href="#server" id="cta-button" class="cta-button"></a>
+                    <a href="#" id="discord-button" class="cta-button discord-button">
+                        <i class="fab fa-discord"></i>
+                        <span id="discord-button-text"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section parallax-section">
+            <div class="content-wrapper">
+                <h2 id="about-section-title" class="section-title"></h2>
+                <div class="about-content">
+                    <img src="images/logo2.png" alt="Logo Independent Homies" class="about-logo">
+                    <div class="about-text">
+                        <p id="about-text"></p>
+                        <ul id="community-highlights-list" class="community-highlights-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="server" class="section server-section">
+            <div class="server-section-background"></div>
+            <div class="content-wrapper">
+                <h2 id="server-section-title" class="section-title"></h2>
+                <div id="server-list" class="server-grid"></div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section gallery-section">
+            <div class="content-wrapper">
+                <h2 id="gallery-section-title" class="section-title"></h2>
+                <div class="gallery-preview"></div>
+            </div>
+        </section>
+
+        <section id="apply" class="section apply-section">
+            <div class="content-wrapper">
+                <h2 id="apply-section-title" class="section-title"></h2>
+                <form id="application-form">
+                    <input type="text" name="name" placeholder="Vaše jméno" required>
+                    <input type="email" name="email" placeholder="Váš e-mail" required>
+                    <textarea name="message" placeholder="Proč se chcete připojit?" required></textarea>
+                    <button type="submit" id="apply-button"></button>
+                </form>
+            </div>
+        </section>
+
+        <section id="team" class="section team-section">
+            <div class="content-wrapper">
+                <h2 id="team-section-title" class="section-title"></h2>
+                <div id="team-grid" class="team-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> <span id="footer-community-name"></span>. <span id="footer-rights"></span></p>
+    </footer>
+
+    <button id="scroll-to-top" title="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <div id="gallery-modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="modal-image" alt="Obrázek z galerie">
+            <div class="modal-navigation">
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="custom-alert" class="custom-alert">
+        <div class="custom-alert-content">
+            <div class="custom-alert-icon">
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <p id="custom-alert-message"></p>
+            <button id="custom-alert-close"></button>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
