@@ -10,7 +10,15 @@ const config = {
 
     // About section
     aboutSectionTitle: "O naší komunitě",
-    aboutText: "Independent Homies je komunitou, kde se každá bitva stává společným úspěchem. Naši členové, od začátečníků po veterány, sdílejí lásku k taktice a přátelství.",
+    aboutText: `
+        Independent Homies je komunitou, kde se každá bitva stává společným úspěchem. Naši členové, od začátečníků po veterány, sdílejí lásku k taktice a přátelství.
+    `,
+    communityHighlights: [
+        { text: "Společné dobrodružství", icon: "fa-users" },
+        { text: "Pravidelné akce a operace", icon: "fa-calendar-alt" },
+        { text: "Trénink a rozvoj dovedností", icon: "fa-graduation-cap" },
+        { text: "Jednota v boji", icon: "fa-handshake" }
+    ],
     aboutLogo: 'logo2.png',
 
     // Server section
@@ -63,10 +71,10 @@ const config = {
     ],
 
     galleryImages: [
-        'gallery7.png', 'gallery9.png',
-        'gallery2.png', 'gallery4.png', 'gallery5.png',
+        'gallery.png', 'gallery2.png', 'gallery3.png', 'gallery4.png', 'gallery5.png',
+        'gallery6.png', 'gallery7.png', 'gallery8.png', 'gallery9.png', 'gallery10.png',
         'gallery11.png', 'gallery12.png', 'gallery13.png', 'gallery14.png', 'gallery15.png',
-        'gallery3.png', 'gallery10.png', 'gallery8.png', 'gallery6.png',
+        'gallery16.png', 'gallery17.png', 'gallery18.png', 'gallery19.png', 'gallery20.png',
     ],
 
     backgroundImages: {
@@ -75,13 +83,6 @@ const config = {
         apply: 'background3.png'
     },
     backgroundChangeInterval: 5000, // ms
-
-    communityHighlights: [
-        { text: "Společné dobrodružství", icon: "fa-users" },
-        { text: "Pravidelné akce a operace", icon: "fa-calendar-alt" },
-        { text: "Trénink a rozvoj dovedností", icon: "fa-graduation-cap" },
-        { text: "Jednota v boji", icon: "fa-handshake" }
-    ],
 
     teamMembers: [
         {

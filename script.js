@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         setImageSrc('about-logo', config.aboutLogo);
     
-        const serverSection = document.querySelector('.server-section');
+        const serverSection = document.querySelector('.server-section-background');
         if (serverSection) {
             serverSection.style.backgroundImage = `url('images/${config.backgroundImages.server}')`;
         }

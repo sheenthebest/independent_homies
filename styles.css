@@ -217,12 +217,11 @@ a {
     text-align: center;
 }
 
-/* Server Section */
 .server-section {
-    background-image: url('images/background2.png');
+    /* background-image: url('images/background2.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     position: relative;
     overflow: hidden;
 }
